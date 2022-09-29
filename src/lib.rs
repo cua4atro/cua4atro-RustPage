@@ -18,7 +18,7 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet() {
-    alert("Hello, wasm-template-rust!");
+    alert("Hola, bienvenido a una pagina oxidada!");
 }
 
 #[cfg(test)]
