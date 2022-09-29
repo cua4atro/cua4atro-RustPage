@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cua4atro/cosas-oxidadas.git"
+    "url": "git+https://github.com/cua4atro/cua4atro.github.io.git"
   },
   "keywords": [
     "webassembly",
@@ -23,7 +23,7 @@
   ],
   "author": "jlreartes <reartes.j.l@gmail.com>",
   "license": "(MIT OR Apache-2.0)",
-  "homepage": "https://github.com/cua4atro/cosas-oxidadas/master/README.md",
+  "homepage": "https://github.com/cua4atro/cua4atro.github.io/blob/master/README.md",
   "dependencies": {
     "cosas-oxidadas": "file:../pkg"
   },
