@@ -1,5 +1,6 @@
 language: rust
-sudo: false
+rust:
+  - 1.64.0
 
 INSTALL_NODE_VIA_NVM: &INSTALL_NODE_VIA_NVM
                         |
@@ -18,7 +19,7 @@ script:
   - cargo build --verbose --all
   - cargo test --verbose --all
 
-matrix:
+jobs:
   allow_failures:
     - name: Tests
   include:
@@ -37,7 +38,7 @@ matrix:
         - mv ./dist/* ../docs
       deploy:
         provider: pages
-        cleanup: true
+        skip-cleanup: true
         github-token: $GITHUB_TOKEN
         local-dir: docs
         keep-history: false

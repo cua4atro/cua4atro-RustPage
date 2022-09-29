@@ -1,6 +1,3 @@
-extern crate js_sys;
-extern crate web_sys;
-
 mod utils;
 
 use wasm_bindgen::prelude::*;
@@ -19,12 +16,4 @@ extern {
 #[wasm_bindgen]
 pub fn greet() {
     alert("Hola, bienvenido a una pagina oxidada!");
-}
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
 }
